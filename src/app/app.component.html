@@ -1,14 +1,16 @@
-<h1>Map through reference</h1>
+<div class="kaart-voorbeeld">
+  <h1>Map through reference</h1>
 
-<ger-map [name]="'Reference'" #map></ger-map>
-<ger-map-view [map]="map">
-  <ger-zoom></ger-zoom>
-</ger-map-view>
-
-<h1>Map through containment</h1>
-<ger-map [name]="'Containment'">
-  <ger-map-view>
-    <ger-zoom></ger-zoom>    
+  <ger-map [name]="'Reference'" #map></ger-map>
+  <ger-map-view [mapContainer]="map">
+    <ger-zoom></ger-zoom>
   </ger-map-view>
-</ger-map>
-
+</div>
+<div class="kaart-voorbeeld">
+  <h1>Map through containment</h1>
+  <ger-map [name]="'Containment'">
+    <ger-map-view>
+      <ger-zoom></ger-zoom>
+    </ger-map-view>
+  </ger-map>
+</div>

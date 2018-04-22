@@ -1,0 +1,90 @@
+.fullscreen-container {
+
+  &:-moz-full-screen {
+    height: 100% !important;
+    width: 100% !important;
+    display: block;
+    overflow: auto;
+  }
+
+  &:-webkit-full-screen {
+    height: 100% !important;
+    width: 100% !important;
+    display: block;
+    overflow: auto;
+  }
+
+  &:-ms-fullscreen {
+    height: 100% !important;
+    width: 100% !important;
+    display: block;
+    overflow: auto;
+  }
+
+  &:fullscreen {
+    height: 100% !important;
+    width: 100% !important;
+    display: block;
+    overflow: auto;
+  }
+
+  position: relative;
+  width: 100%;
+}
+
+.map-view {
+  height: 100%;
+  width: 100%;
+  float: left;
+}
+
+.view-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  pointer-events: none;
+}
+
+.view-info {
+  position: absolute;
+  max-height: calc(100% - 32px);
+  height: auto;
+  width: 480px;
+  top: 16px;
+  left: 16px;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: auto;
+  pointer-events: initial;
+}
+
+.view-toolbox {
+  position: absolute;
+  max-height: calc(100% - 32px);
+  height: auto;
+  width: 480px;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: auto;
+  pointer-events: initial;
+}
+
+.view-attributes {
+  position: absolute;
+  max-height: 24px;
+  height: auto;
+  width: auto;
+  bottom: 16px;
+  right: 16px;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: auto;
+  pointer-events: initial;
+}
