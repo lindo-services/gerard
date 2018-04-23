@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'ger-reversed-layout',
+  selector: 'ger-layout[type=reversed]',
   templateUrl: './reversed-layout.component.html',
   styleUrls: ['./reversed-layout.component.scss']
 })

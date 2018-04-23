@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'ger-standard-layout',
+  selector: 'ger-layout[type=standard]',
   templateUrl: './standard-layout.component.html',
   styleUrls: ['./standard-layout.component.scss']
 })

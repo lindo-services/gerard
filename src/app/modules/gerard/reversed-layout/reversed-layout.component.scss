@@ -1,4 +1,4 @@
-.view-info {
+.view-info-container {
   position: absolute;
   height: auto;
   width: auto;
@@ -18,7 +18,7 @@
   flex-shrink: 0;
 }
 
-.view-selector {
+.view-selector-container {
   height: auto;
   width: auto;
   display: flex;
@@ -26,7 +26,7 @@
   align-items: flex-start;
 }
 
-.view-tools {
+.view-tools-container {
   height: auto;
   width: auto;
   display: flex;
@@ -34,7 +34,7 @@
   align-items: flex-start;
 }
 
-.view-toolbox {
+.view-toolbox-container {
   height: auto;
   width: auto;
   display: flex;
@@ -49,7 +49,7 @@
   flex: 1;
 }
 
-.view-tools-and-selector {
+.view-tools-and-selector-container {
   height: auto;
   width: auto;
   display: flex;
@@ -57,11 +57,11 @@
   align-items: flex-end;
 }
 
-.view-attributes {
+.view-attributes-container {
   pointer-events: initial;
 }
 
-.left-view {
+.view-left-container {
   position: absolute;
   width: auto;
   top: 16px;
