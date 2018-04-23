@@ -18,7 +18,7 @@ export class MapViewComponent implements OnInit {
 
   @ViewChild('mapdiv') mapElement: ElementRef;
 
-  private view: ol.View;
+  view: ol.View;
 
   private static configureerLambert72() {
     ol.proj.setProj4(proj4);

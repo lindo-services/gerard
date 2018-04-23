@@ -4,7 +4,7 @@ This project is a test to build a map component as a combination of [Openlayers]
 
 ## Naming
 
-It is named a a tribute to [Gerardus Mercator](https://en.wikipedia.org/wiki/Gerardus_Mercator).
+It is named as a tribute to [Gerardus Mercator](https://en.wikipedia.org/wiki/Gerardus_Mercator).
 
 ![alt text](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Mercator.jpg/250px-Mercator.jpg "Gerardus Mercator")
 

@@ -8,16 +8,32 @@ import { MapViewComponent } from '../map-view/map-view.component';
   styleUrls: ['./zoom.component.scss']
 })
 export class ZoomComponent implements OnInit {
-  @Input()
-  view: MapViewComponent;
+  canZoomIn = true;
+  canZoomOut = true;
 
-  constructor(@Optional() view: MapViewComponent) {
-    if ( view) {
-      this.view = view;
-    }
+  constructor(private viewContainer: MapViewComponent) {
   }
 
   ngOnInit() {
+    this.zoomChanged();
+    this.viewContainer.view.on('change:resolution', () => {
+      this.zoomChanged();
+    });
   }
 
+  zoomIn() {
+    this.viewContainer.view.setZoom(this.viewContainer.view.getZoom() + 1);
+    this.zoomChanged();
+  }
+
+  zoomOut() {
+    this.viewContainer.view.setZoom(this.viewContainer.view.getZoom() - 1);
+    this.zoomChanged();
+  }
+
+  private zoomChanged() {
+    const zoom = this.viewContainer.view.getZoom();
+    this.canZoomIn = zoom + 1 <= this.viewContainer.view.getMaxZoom();
+    this.canZoomOut = zoom - 1 >= this.viewContainer.view.getMinZoom();
+  }
 }

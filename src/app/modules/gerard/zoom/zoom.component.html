@@ -1,3 +1,8 @@
-<p>
-  zoom works! 
-</p>
+<div class="float-box panel">
+    <button mat-raised-button (click)="zoomIn()" [disabled]="!canZoomIn">
+      <mat-icon aria-label="zoom in">add</mat-icon>
+    </button>
+    <button mat-raised-button (click)="zoomOut()" [disabled]="!canZoomOut">
+      <mat-icon aria-label="zoom out">remove</mat-icon>
+    </button>
+  </div>

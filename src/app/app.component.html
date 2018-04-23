@@ -2,46 +2,52 @@
   <h1>Map through reference</h1>
 
   <ger-map #map>
+    <ger-layer-group [name]="'Background'" [background]="true">
+      <ger-osm-layer></ger-osm-layer>
+    </ger-layer-group>
   </ger-map>
 
   <ger-map-view [mapContainer]="map">
     <ger-layout type="standard">
-      <div class="view-info">info1</div>
-      <div class="view-info">info2</div>
-      <div class="view-info">info3</div>
-      <div class="view-info">info4</div>
-      <div class="view-info">info5</div>
-      <div class="view-info">info6</div>
-      <div class="view-toolbox">toolbox1</div>
-      <div class="view-toolbox">toolbox2</div>
-      <div class="view-tools">tools1</div>
-      <div class="view-tools">tools2</div>
-      <div class="view-tools">tools3</div>
-      <div class="view-selector">selector1</div>
-      <div class="view-selector">selector2</div>
-      <div class="view-attributes">attributes</div>
+      <div class="red view-info">info1</div>
+      <div class="red view-info">info2</div>
+      <div class="red view-info">info3</div>
+      <div class="red view-info">info4</div>
+      <div class="red view-info">info5</div>
+      <div class="red view-info">info6</div>
+      <div class="green view-toolbox">toolbox1</div>
+      <div class="green view-toolbox">toolbox2</div>
+      <ger-zoom class="view-tools"></ger-zoom>
+      <div class="blue view-tools">tools2</div>
+      <div class="blue view-tools">tools3</div>
+      <div class="yellow view-selector">selector1</div>
+      <div class="yellow view-selector">selector2</div>
+      <div class="brown view-attributes">attributes</div>
     </ger-layout>
   </ger-map-view>
 </div>
 <div class="kaart-voorbeeld">
   <h1>Map through containment</h1>
   <ger-map>
+    <ger-layer-group [name]="'Background'" [background]="true">
+      <ger-osm-layer></ger-osm-layer>
+    </ger-layer-group>
     <ger-map-view>
       <ger-layout type="reversed">
-        <div class="view-info">info1</div>
-        <div class="view-info">info2</div>
-        <div class="view-info">info3</div>
-        <div class="view-info">info4</div>
-        <div class="view-info">info5</div>
-        <div class="view-info">info6</div>
-        <div class="view-toolbox">toolbox1</div>
-        <div class="view-toolbox">toolbox2</div>
-        <div class="view-tools">tools1</div>
-        <div class="view-tools">tools2</div>
-        <div class="view-tools">tools3</div>
-        <div class="view-selector">selector1</div>
-        <div class="view-selector">selector2</div>
-        <div class="view-attributes">attributes</div>
+        <div class="red view-info">info1</div>
+        <div class="red view-info">info2</div>
+        <div class="red view-info">info3</div>
+        <div class="red view-info">info4</div>
+        <div class="red view-info">info5</div>
+        <div class="red view-info">info6</div>
+        <div class="green view-toolbox">toolbox1</div>
+        <div class="green view-toolbox">toolbox2</div>
+        <ger-zoom class="view-tools"></ger-zoom>
+        <div class="blue view-tools">tools2</div>
+        <div class="blue view-tools">tools3</div>
+        <div class="yellow view-selector">selector1</div>
+        <div class="yellow view-selector">selector2</div>
+        <div class="brown view-attributes">attributes</div>
       </ger-layout>
     </ger-map-view>
   </ger-map>
