@@ -6,7 +6,6 @@ import * as ol from 'openlayers';
   template: '<ng-content></ng-content>'
 })
 export class MapComponent implements OnInit {
-  @Input() name: string;
   map: ol.Map;
 
   constructor() { }

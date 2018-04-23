@@ -1,7 +1,7 @@
 <div class="kaart-voorbeeld">
   <h1>Map through reference</h1>
 
-  <ger-map [name]="'Reference'" #map>
+  <ger-map #map>
   </ger-map>
 
   <ger-map-view [mapContainer]="map">
@@ -25,7 +25,7 @@
 </div>
 <div class="kaart-voorbeeld">
   <h1>Map through containment</h1>
-  <ger-map [name]="'Containment'">
+  <ger-map>
     <ger-map-view>
       <ger-layout type="reversed">
         <div class="view-info">info1</div>
