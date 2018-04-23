@@ -8,6 +8,10 @@ It is named a a tribute to [Gerardus Mercator](https://en.wikipedia.org/wiki/Ger
 
 ![alt text](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Mercator.jpg/250px-Mercator.jpg "Gerardus Mercator")
 
+## Goal
+
+I want to make an easy to use component library for maps. The library should be usable in a declarative style (from html tags) and in a programmable style, from typescript.
+
 ## Angular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
