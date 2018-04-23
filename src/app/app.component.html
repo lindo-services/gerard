@@ -4,6 +4,22 @@
   <ger-map [name]="'Reference'" #map></ger-map>
   <ger-map-view [mapContainer]="map">
     <ger-zoom></ger-zoom>
+    <ger-standard-layout class="layout">
+      <div class="view-info">info1</div>
+      <div class="view-info">info2</div>
+      <div class="view-info">info3</div>
+      <div class="view-info">info4</div>
+      <div class="view-info">info5</div>
+      <div class="view-info">info6</div>
+      <div class="view-toolbox">toolbox1</div>
+      <div class="view-toolbox">toolbox2</div>
+      <div class="view-tools">tools1</div>
+      <div class="view-tools">tools2</div>
+      <div class="view-tools">tools3</div>
+      <div class="view-selector">selector1</div>
+      <div class="view-selector">selector2</div>
+      <div class="view-attributes">attributes</div>
+    </ger-standard-layout>
   </ger-map-view>
 </div>
 <div class="kaart-voorbeeld">
@@ -11,6 +27,22 @@
   <ger-map [name]="'Containment'">
     <ger-map-view>
       <ger-zoom></ger-zoom>
+      <ger-reversed-layout class="layout">
+          <div class="view-info">info1</div>
+          <div class="view-info">info2</div>
+          <div class="view-info">info3</div>
+          <div class="view-info">info4</div>
+          <div class="view-info">info5</div>
+          <div class="view-info">info6</div>
+          <div class="view-toolbox">toolbox1</div>
+          <div class="view-toolbox">toolbox2</div>
+          <div class="view-tools">tools1</div>
+          <div class="view-tools">tools2</div>
+          <div class="view-tools">tools3</div>
+          <div class="view-selector">selector1</div>
+          <div class="view-selector">selector2</div>
+          <div class="view-attributes">attributes</div>
+          </ger-reversed-layout>
     </ger-map-view>
   </ger-map>
 </div>

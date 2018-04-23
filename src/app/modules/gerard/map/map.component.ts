@@ -3,8 +3,7 @@ import * as ol from 'openlayers';
 
 @Component({
   selector: 'ger-map',
-  templateUrl: './map.component.html',
-  styleUrls: ['./map.component.scss']
+  template: '<ng-content></ng-content>'
 })
 export class MapComponent implements OnInit {
   @Input() name: string;

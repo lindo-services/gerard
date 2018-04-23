@@ -1,20 +1,6 @@
 <div class="fullscreen-container">
   <div class="map-view" #mapdiv></div>
   <div class="view-overlay">
-    <div class="view-info">
-      <ng-content select=".view-info"></ng-content>
-    </div>
-    <div class="view-toolbox">
-      <ng-content select=".view-toolbox"></ng-content>
-    </div>
-    <div class="view-tools">
-      <ng-content select=".view-tools"></ng-content>
-    </div>
-    <div class="view-selector">
-      <ng-content select=".view-selector"></ng-content>
-    </div>
-    <div class="view-attributes">
-      <ng-content select=".view-attributes"></ng-content>
-    </div>
+    <ng-content select=".layout"></ng-content>
   </div>
 </div>

@@ -1,0 +1,20 @@
+<div class="left-view">
+  <div class="view-toolbox mini-scroll">
+    <ng-content select=".view-toolbox"></ng-content>
+  </div>
+  <div class="view-spacer"></div>
+  <div class="view-tools-and-selector no-scroll">
+    <div class="view-tools no-scroll">
+      <ng-content select=".view-tools"></ng-content>
+    </div>
+    <div class="view-selector no-scroll">
+      <ng-content select=".view-selector"></ng-content>
+    </div>
+  </div>
+  <div class="view-attributes no-scroll">
+    <ng-content select=".view-attributes"></ng-content>
+  </div>
+</div>
+<div class="view-info mini-scroll">
+  <ng-content select=".view-info"></ng-content>
+</div>

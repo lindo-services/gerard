@@ -5,7 +5,7 @@ import { MapViewComponent } from '../map-view/map-view.component';
 @Component({
   selector: 'ger-zoom',
   templateUrl: './zoom.component.html',
-  styleUrls: ['./zoom.component.css']
+  styleUrls: ['./zoom.component.scss']
 })
 export class ZoomComponent implements OnInit {
   @Input()

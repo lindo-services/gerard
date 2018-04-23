@@ -2,3 +2,51 @@
 :host ::ng-deep .fullscreen-container {
   height: 400px !important;
 }
+
+.view-info {
+  width: 400px;
+  height: 100px;
+  min-height: 100px;
+  background-color: red;
+  border: 1;
+  border-style: solid;
+  border-color: black;
+}
+
+.view-toolbox {
+  width: 400px;
+  height: 250px;
+  min-height: 250px;
+  background-color: green;
+  border: 1;
+  border-style: solid;
+  border-color: black;
+}
+
+.view-tools {
+  width: 16px;
+  height: 16px;
+  background-color: blue;
+  border: 1;
+  border-style: solid;
+  border-color: black;
+}
+
+.view-selector {
+  width: 64px;
+  height: 64px;
+  min-height: 64px;
+  background-color: yellow;
+  border: 1;
+  border-style: solid;
+  border-color: black;
+}
+
+.view-attributes {
+  width: 700px;
+  height: 10px;
+  background-color: brown;
+  border: 1;
+  border-style: solid;
+  border-color: black;
+}
