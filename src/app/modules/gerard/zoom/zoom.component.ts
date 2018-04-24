@@ -16,24 +16,24 @@ export class ZoomComponent implements OnInit {
 
   ngOnInit() {
     this.zoomChanged();
-    this.viewContainer.view.on('change:resolution', () => {
+    this.viewContainer.getView().on('change:resolution', () => {
       this.zoomChanged();
     });
   }
 
   zoomIn() {
-    this.viewContainer.view.setZoom(this.viewContainer.view.getZoom() + 1);
+    this.viewContainer.getView().setZoom(this.viewContainer.getView().getZoom() + 1);
     this.zoomChanged();
   }
 
   zoomOut() {
-    this.viewContainer.view.setZoom(this.viewContainer.view.getZoom() - 1);
+    this.viewContainer.getView().setZoom(this.viewContainer.getView().getZoom() - 1);
     this.zoomChanged();
   }
 
   private zoomChanged() {
-    const zoom = this.viewContainer.view.getZoom();
-    this.canZoomIn = zoom + 1 <= this.viewContainer.view.getMaxZoom();
-    this.canZoomOut = zoom - 1 >= this.viewContainer.view.getMinZoom();
+    const zoom = this.viewContainer.getView().getZoom();
+    this.canZoomIn = zoom + 1 <= this.viewContainer.getView().getMaxZoom();
+    this.canZoomOut = zoom - 1 >= this.viewContainer.getView().getMinZoom();
   }
 }

@@ -7,7 +7,7 @@ import { LayerContainer } from '../base-layer/base-layer.component';
   template: '<ng-content></ng-content>'
 })
 export class MapComponent implements OnInit, LayerContainer {
-  map: ol.Map;
+  private map: ol.Map;
 
   constructor() { }
 
@@ -23,5 +23,9 @@ export class MapComponent implements OnInit, LayerContainer {
 
   getLayerGroup(): ol.layer.Group {
     return this.map.getLayerGroup();
+  }
+
+  getMap(): ol.Map {
+    return this.map;
   }
 }

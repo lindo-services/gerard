@@ -1,93 +1,29 @@
-.view-info-container {
-  position: absolute;
-  height: auto;
-  width: auto;
-  top: 16px;
-  right: 16px;
-  bottom: 16px;
-  display: flex;
-  flex-direction: column;
-  overflow-x: hidden;
-  overflow-y: auto;
-  pointer-events: initial;
-}
+@import '../standard-layout/standard-layout.component.scss';
 
-.no-scroll {
-  overflow-x: hidden;
-  overflow-y: hidden;
-  flex-shrink: 0;
+.view-info-container {
+  left: auto;
+  right: 16px;
 }
 
 .view-selector-container {
-  height: auto;
-  width: auto;
-  display: flex;
-  flex-direction: row;
   align-items: flex-start;
 }
 
 .view-tools-container {
-  height: auto;
-  width: auto;
-  display: flex;
-  flex-direction: column-reverse;
   align-items: flex-start;
 }
 
 .view-toolbox-container {
-  height: auto;
-  width: auto;
-  display: flex;
-  flex-direction: column;
   align-items: flex-end;
-  overflow-x: hidden;
-  overflow-y: auto;
-  pointer-events: initial;
-}
-
-.view-spacer {
-  flex: 1;
 }
 
 .view-tools-and-selector-container {
-  height: auto;
-  width: auto;
-  display: flex;
-  flex-direction: row;
   align-items: flex-end;
+  flex-direction: row;
 }
 
-.view-attributes-container {
-  pointer-events: initial;
-}
-
-.view-left-container {
-  position: absolute;
-  width: auto;
-  top: 16px;
-  bottom: 16px;
+.view-other-container {
+  right: auto;
   left: 16px;
-  display: flex;
-  flex-direction: column;
   align-items: flex-start;
-  overflow-x: hidden;
-  overflow-y: hidden;
-}
-
-.mini-scroll::-webkit-scrollbar-track
-{
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-  box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-  background-color: #F5F5F5;
-}
-
-.mini-scroll::-webkit-scrollbar
-{
-  width: 6px;
-  background-color: #F5F5F5;
-}
-
-.mini-scroll::-webkit-scrollbar-thumb
-{
-  background-color: #555;
 }

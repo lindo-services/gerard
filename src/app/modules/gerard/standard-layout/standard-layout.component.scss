@@ -45,7 +45,15 @@
   pointer-events: initial;
 }
 
-.view-spacer {
+.view-vertical-spacer {
+  min-height: 8px;
+}
+
+.view-horizontal-spacer {
+  min-width: 8px;
+}
+
+.view-take-up-space{
   flex: 1;
 }
 
@@ -61,7 +69,7 @@
   pointer-events: initial;
 }
 
-.view-right-container {
+.view-other-container {
   position: absolute;
   width: auto;
   top: 16px;
